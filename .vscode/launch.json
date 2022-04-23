@@ -1,0 +1,15 @@
+{
+    "version": "1.0.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "API-URL": "http://localhost:8000/"
+            }
+        }
+    ]
+}
