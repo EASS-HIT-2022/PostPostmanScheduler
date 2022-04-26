@@ -12,7 +12,7 @@ def execute_monitors():
         executeResponse = requests.post(os.environ.get('API-URL') + 'executor/execute/' + monitor["_id"])
         print(executeResponse)
 
-
+print("scheduler is up!")
 scheduler = BlockingScheduler()
 scheduler.add_job(execute_monitors, 'interval', hours=1)
 scheduler.start()
